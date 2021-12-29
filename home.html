@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binay Translate</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+</head>
+<body>
+    <div class="main" style="display: none;">
+      <br>
+    <h1>Binary convertor</h1>
+    
+        <form id="nr" class="numar" >
+          
+          <input id="d1">
+          <input id="d2">
+          <input id="d3">
+          <input id="d4">
+          <input id="d5">
+          <input id="d6">
+          <input id="d7">
+          <input id="d8">
+        </form>
+    
+    <h4>1 or 0</h4>
+   
+   <button id="rezolva" onclick="add()" >Translate!</button>
+  </div>
+    <div id="rezult"class="results" style="display: none;">
+      
+        <h2>Numeric result: </h2>
+        <h2>ASCII result:</h2>
+        
+        <h1 id="rezn"></h1>
+     
+        
+
+        
+        <h1  id="rezASCII"></h1>
+        <button type="button"onclick="reset()" id="reset">Reset!</button>
+      </div>
+      
+    </div>
+    <div class="navbar">
+     
+      <a id="insta" href="https://www.instagram.com/bobomarcu/"><img src="insta.png" height="40px"></a>
+      <br>
+      <a id="github" href="https://github.com/bobomarcu"><img src="github.png" height="40px"></a>
+
+      
+     
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        
+        function add(){
+          
+            
+           
+       
+          
+            //verficare numar
+            if(document.getElementById("d1").value > 1 || document.getElementById("d1").value < 0) {
+              window.alert("Wrong digit 1!");
+              return;
+            }
+            if(document.getElementById("d2").value >  1 || document.getElementById("d2").value < 0) {
+              window.alert("Wrong digit 2!");
+              return;
+            }if(document.getElementById("d3").value > 1 || document.getElementById("d3").value < 0) {
+              window.alert("Wrong digit 3 !");
+              return;
+            }
+            if(document.getElementById("d4").value > 1 || document.getElementById("d4").value  < 0) {
+              window.alert("Wrong digit 4!");
+              return;
+            }if(document.getElementById("d5").value > 1 || document.getElementById("d5").value < 0) {
+              window.alert("Wrong digit 5!");
+              return;
+            }
+            if(document.getElementById("d6").value > 1 || document.getElementById("d6").value < 0) {
+              window.alert("Wrong digit 6!");
+              return;
+            }
+            if(document.getElementById("d7").value > 1 || document.getElementById("d7").value < 0) {
+              window.alert("Wrong digit 7 !");
+              return;
+            }
+            if(document.getElementById("d8").value > 1 || document.getElementById("d8").value < 0) {
+              window.alert("Wrong digit 8!");
+              return;
+            }
+
+
+
+
+
+
+
+            //calculus
+
+
+            if(document.getElementById("d1").value == 1){
+                var di1 = 1*128;
+            }
+            else if(document.getElementById("d1").value == 0){
+                 var di1 = 0;
+            }
+            console.log(di1);
+
+            if(document.getElementById("d2").value == 1){
+                var di2 = 1*64;
+            }
+            else if(document.getElementById("d2").value == 0){
+                 var di2 = 0;
+            }
+            console.log(di2);
+            if(document.getElementById("d3").value == 1){
+                var di3 = 1*32;
+            }
+            else if(document.getElementById("d3").value == 0){
+                 var di3 = 0;
+            }
+            console.log(di3);
+            if(document.getElementById("d4").value == 1){
+                var di4 = 1*16;
+            }
+            else if(document.getElementById("d4").value == 0){
+                 var di4 = 0;
+            }
+            console.log(di4);
+            if(document.getElementById("d5").value == 1){
+                var di5 = 1*4;
+            }
+            else if(document.getElementById("d5").value == 0){
+                 var di5 = 0;
+            }
+            console.log(di5);
+            if(document.getElementById("d6").value == 1){
+                var di6 = 1*2;
+            }
+            else if(document.getElementById("d6").value == 0){
+                 var di6 = 0;
+            }
+            console.log(di6);
+            if(document.getElementById("d7").value == 1){
+                var di7 = 1*1;
+            }
+            else if(document.getElementById("d7").value == 0){
+                 var di7 = 0;
+            }
+            console.log(di7);
+            if(document.getElementById("d7").value == 1){
+                var di7 = 1*1;
+            }
+            else if(document.getElementById("d7").value == 0){
+                 var di7 = 0;
+            }
+            if(document.getElementById("d8").value == 1){
+                var di8 = 1*1;
+            }
+            else if(document.getElementById("d8").value == 0){
+                 var di8 = 0;
+            }
+            console.log(di8);
+            var rez = di1 + di2 + di3 + di4 + di5 + di6 + di7 + di8;
+            console.log(rez);
+            if(rez <33 || rez>126){
+              window.alert("The digits you have entered are over our product boundary (33 & 126)!");
+              
+              return;
+            }
+            else{
+             
+              $("#rezult").fadeIn(1000);
+
+           
+
+              
+              
+              
+
+           
+              document.getElementById("rezn").innerHTML = rez;
+              
+            
+              document.getElementById("rezASCII").innerHTML = String.fromCharCode(rez);
+             
+            }
+
+            
+        }
+        
+    </script>
+    <script>
+              
+                  $(".main").fadeIn(1300);
+                  
+      
+             
+                  
+                  
+         
+              $(document).ready(function(){
+               
+                $("#reset").click(function(){
+                    $("#rezult").fadeOut(900);
+                    $(".numar").trigger("reset");
+                });
+              });
+        
+   
+        
+      
+     
+    </script>
+   
+
+</body>
+</html>

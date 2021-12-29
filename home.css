@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(235, 235, 235);
+}
+input{
+    width: 10px;
+    height: 20px;
+    border-color: rgb(63, 63, 63);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    
+}
+form{
+    margin-left: 39% ;
+    margin-top: 5%;
+}
+
+
+label{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    margin-top: 19px ;
+    margin-left: 43%;
+    background-color:rgb(55, 55, 255) ;
+    border-style: solid;
+    border-width: 0px;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    
+    
+}
+button:hover{
+    background-color:rgb(231, 231, 231) ;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(55, 55, 255);
+    color: black;
+    transition: 0.4s;
+}
+#reset{
+    margin-left: 80%;
+}
+.results{
+    width: 800px;
+    height: 270px;
+    background-color: white;
+    margin-top: 3%;
+    border-radius: 15px ;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-column: 2px;
+    
+}
+.results h1{
+    color:rgb(55, 55, 255) ;
+    margin-left: 29%;
+    margin-top: -10%;
+    
+}
+.results h2{
+    margin-top: 16%;
+    margin-left: 25%;
+}
+
+.main{
+    width: 800px;
+    height: 270px;
+    background-color: white;
+    margin-top: 3%;
+    border-radius: 15px ;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.main h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main h4{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    text-align: center;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .navbar a{
+      margin-top: 2%;
+  }
+  .navbar #insta{
+
+      margin-left: 45% ;
+  }
+  .navbar #github{
+      margin-left: 4%;
+  }
+  
+  
+@media only screen and (max-width: 1000px){
+    .main{
+        width: 300px;
+        height: 230px;
+        background-color: white;
+        margin-top: 3%;
+        border-radius: 15px ;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .numar{
+        margin-left: 23%;
+    }
+    button{
+        margin-top: -2%;
+        margin-left: 32%;
+        
+    }
+    .results{
+        width: 300px;
+        height: 230px;
+        background-color: white;
+        margin-top: 3%;
+        border-radius: 15px ;
+        margin-right: auto;
+        margin-left: auto;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #reset{
+        margin-left: 54%;
+    }
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+        position: fixed;
+        height: 70px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+      }
+      .navbar a{
+        margin-top: 4%;
+    }
+    .navbar #insta{
+  
+        margin-left: 34% ;
+    }
+    .navbar #github{
+        margin-left: 10%;
+    }
+   
+}
